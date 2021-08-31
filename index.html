@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <header>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <h1 id="title">Survey Form</h1>
+  </header>
+
+  <main>
+    <section>
+    <p id="description">Thank you for helping me knowing more about you</p>
+    </section>
+
+    <section>
+     <form id="survey-form">
+       <div class="data">
+         <label id="name-label" for="name">
+         Name
+         </label>
+         <input type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+         />
+       </div>
+       <div class="data">
+         <label id="email-label" for="email">
+         Email
+         </label>
+         <input type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email Adress"
+              required
+         />
+       </div>
+       <div class="data">
+         <label id="number-label" for="number">
+           Age
+         </label>
+         <input type="number"
+              min="18"
+              max="99"
+              name="number"
+              id="number"
+              placeholder="Age"
+              required
+         />
+       </div>
+       <div class="data">
+         <p>How did you find this website ?</p>
+         <select id="dropdown" name="source" required>
+           <option disabled selected value>
+             Select the source
+           </option>
+           <option value="search engine">
+             Google / Yahoo
+           </option>
+           <option value="community">
+             Forum
+           </option>
+           <option value="fcc">
+             FreeCodeCamp
+           </option>
+           <option value="portfolio">
+             Github
+           </option>
+           <option value="other">
+             Other
+           </option>
+         </select>
+       </div>
+       <div class="data">
+         <p>Would you help me improve and give me feedback ?</p>
+         <label>
+           <input name="user-recommend"
+                  value = "definitely"
+                  type="radio"
+                  class="_input"
+                  checked/>
+           Definitely
+         </label>
+         <label>
+           <input name="user-recommend"
+                  value = "maybe"
+                  type="radio"
+                  class="_input"
+                  />
+           Maybe
+         </label>
+         <label>
+           <input name="user-recommend"
+                  value = "later"
+                  type="radio"
+                  class="_input"/>
+           later
+         </label>
+       </div>
+       <div class="data">
+         <p>What can I improve ?</p>
+         <label>
+         <input name="improve"
+                value="visual"
+                type="checkbox"/>Visual</label>
+         <label>
+         <input name="improve"
+                value="accessibility"
+                type="checkbox"/>Accessibility</label>
+         <label>
+         <input name="improve"
+                value="content"
+                type="checkbox"/>Content</label>
+       </div>
+       <div class="data">
+         <p>Any comments or suggestions ?</p>
+         <textarea id="comments"
+                   name="comment"
+                   placeholder="Enter your comment here..."></textarea>
+       </div>
+       <button type="submit" id="submit">Submit</button>
+     </form>
+   </section>
+  </main>
+
+  <footer>
+   <small>&copy; Copyright Août 2021,
+     <a href="https://github.com/Vink3" target="_blank">Vink3</a></small>
+   </footer>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+</html>
